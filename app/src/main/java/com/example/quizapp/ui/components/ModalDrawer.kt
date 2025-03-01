@@ -119,7 +119,7 @@ fun DrawerMenu(
             shape = RoundedCornerShape(12.dp),
             colors = ButtonDefaults.buttonColors(containerColor = Color.Red)
         ) {
-            Text(text = "❌ Выйти из приложения", fontSize = 18.sp, color = Color.White)
+            Text(text = "Выйти из приложения", fontSize = 18.sp, color = Color.White)
         }
     }
 }

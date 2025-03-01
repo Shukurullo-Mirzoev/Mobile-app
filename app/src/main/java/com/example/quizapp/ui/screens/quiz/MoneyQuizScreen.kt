@@ -12,7 +12,7 @@ fun MoneyQuizScreen(region: String, onBack: () -> Unit, onQuizFinished: () -> Un
     QuizScreen(
         questions = questions,
         title = "Деньги",
-        buttonColor = MaterialTheme.colorScheme.primary, // ✅ `buttonColor` berildi
+        defaultColor = MaterialTheme.colorScheme.primary, // ✅ `buttonColor` berildi
         onBack = onBack,
         onQuizFinished = onQuizFinished // ✅ `onQuizFinished` ham berildi
     )

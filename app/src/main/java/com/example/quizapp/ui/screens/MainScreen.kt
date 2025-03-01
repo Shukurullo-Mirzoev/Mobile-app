@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.example.quizapp.data.getCapitalQuestions
@@ -14,6 +15,7 @@ import com.example.quizapp.ui.components.AppBar
 import com.example.quizapp.ui.components.DrawerMenu
 import com.example.quizapp.ui.screens.quiz.QuizScreen
 import kotlinx.coroutines.launch
+
 
 @Composable
 fun MainScreen() {
@@ -104,13 +106,13 @@ fun MainScreen() {
                                 QuizScreen(
                                     title = selectedCategory,
                                     questions = questions,
-                                    buttonColor = MaterialTheme.colorScheme.primary,
-                                    onBack = { selectedScreen = "region" }
-                                ) {
-                                    selectedScreen = "category"
-                                }
+                                    defaultColor = Color(0xFF6200EA),  // Pass defaultColor here
+                                    onBack = { selectedScreen = "region" },
+                                    onQuizFinished = { selectedScreen = "category" }
+                                )
                             }
                         }
+
                         "developer" -> DeveloperScreen(onBack = { selectedScreen = "category" })
                     }
                 }

@@ -11,7 +11,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.quizapp.ui.theme.primaryColor
 
-
 @Composable
 fun RegionSelectionScreen(selectedCategory: String, onRegionSelected: (String) -> Unit, onBack: () -> Unit) {
 
@@ -98,5 +97,3 @@ fun RegionSelectionScreen(selectedCategory: String, onRegionSelected: (String) -
 //        }
 //    }
 //}
-//
-

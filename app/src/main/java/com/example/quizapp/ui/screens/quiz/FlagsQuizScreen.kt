@@ -12,7 +12,7 @@ fun FlagsQuizScreen(region: String, onBack: () -> Unit, onQuizFinished: () -> Un
     QuizScreen(
         questions = questions,
         title = "Флаги",
-        buttonColor = MaterialTheme.colorScheme.primary, // ✅ `buttonColor` berildi
+        defaultColor = MaterialTheme.colorScheme.primary, // ✅ `buttonColor` berildi
         onBack = onBack,
         onQuizFinished = onQuizFinished // ✅ `onQuizFinished` ham berildi
     )

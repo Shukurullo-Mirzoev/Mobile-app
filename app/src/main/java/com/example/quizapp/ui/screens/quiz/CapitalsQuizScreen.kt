@@ -11,7 +11,7 @@ fun CapitalsQuizScreen(region: String, onBack: () -> Unit, onQuizFinished: () ->
     QuizScreen(
         questions = questions,
         title = "Столицы",
-        buttonColor = MaterialTheme.colorScheme.primary, // ✅ `buttonColor` berildi
+        defaultColor = MaterialTheme.colorScheme.primary, // ✅ `buttonColor` berildi
         onBack = onBack,
         onQuizFinished = onQuizFinished // ✅ `onQuizFinished` ham berildi
     )

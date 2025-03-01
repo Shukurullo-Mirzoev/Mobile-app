@@ -44,21 +44,21 @@ fun DeveloperScreen(onBack: () -> Unit) {
         Spacer(modifier = Modifier.height(16.dp))
 
         // **Ism va lavozim**
-        Text("Sizning Ismingiz", fontSize = 22.sp, fontWeight = FontWeight.Bold)
+        Text("Shukurullo Mirzoev", fontSize = 22.sp, fontWeight = FontWeight.Bold)
         Text("Android Developer", fontSize = 16.sp, color = Color.Gray)
 
         Spacer(modifier = Modifier.height(16.dp))
 
         // **Kontakt ma'lumotlari**
-        ContactInfo(icon = R.drawable.ic_linkedin, text = "+992 88 100 18 04") {
+        ContactInfo(icon = R.drawable.ic_call, text = "+992 88-100-1804") {
             val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:+992881001804"))
             context.startActivity(intent)
         }
-        ContactInfo(icon = R.drawable.ic_linkedin, text = "shukurullomirzoev2004@gmail.com") {
+        ContactInfo(icon = R.drawable.ic_email, text = "shukurullomirzoev2004@gmail.com") {
             val intent = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:shukurullomirzoev2004@gmail.com"))
             context.startActivity(intent)
         }
-        ContactInfo(icon = R.drawable.ic_linkedin, text = "www.developer.tj") {
+        ContactInfo(icon = R.drawable.baseline_wifi_24, text = "www.developer.tj") {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.developer.tj"))
             context.startActivity(intent)
         }
