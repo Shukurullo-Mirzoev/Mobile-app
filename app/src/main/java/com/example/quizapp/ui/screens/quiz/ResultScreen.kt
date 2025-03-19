@@ -4,7 +4,6 @@ import androidx.compose.animation.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -48,12 +47,12 @@ fun ResultScreen(correct: Int, wrong: Int, onRestart: () -> Unit) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 // Title and Result Info
-                Text(text = "Your Result!", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = Color.White)
+                Text(text = "Ваш результат!", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = Color.White)
                 Spacer(modifier = Modifier.height(16.dp))
 
-                Text(text = "Correct Answers: $correct", fontSize = 20.sp, color = Color.Green)
-                Text(text = "Wrong Answers: $wrong", fontSize = 20.sp, color = Color.Red)
-                Text(text = "Total Questions: $total", fontSize = 20.sp, color = Color.White)
+                Text(text = "Правильных ответов: $correct", fontSize = 20.sp, color = Color.Green)
+                Text(text = "Неправильных ответов: $wrong", fontSize = 20.sp, color = Color.Red)
+                Text(text = "Всего вопросов: $total", fontSize = 20.sp, color = Color.White)
 
                 Spacer(modifier = Modifier.height(20.dp))
 
@@ -64,10 +63,20 @@ fun ResultScreen(correct: Int, wrong: Int, onRestart: () -> Unit) {
                     shape = RoundedCornerShape(12.dp),
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Text("🔄 Try Again.", fontSize = 18.sp, color = Color(0xFF1E88E5))
+                    Text("🔄 Попробовать снова.", fontSize = 18.sp, color = Color(0xFF1E88E5))
+                }
+
+                Spacer(modifier = Modifier.height(16.dp))
+
+                // Add a smile animation here
+                AnimatedVisibility(
+                    visible = isVisible,
+                    enter = fadeIn() + scaleIn(),
+                    exit = fadeOut() + scaleOut()
+                ) {
+                    Text(text = "😊", fontSize = 48.sp) // Smile Emoji
                 }
             }
         }
     }
 }
-

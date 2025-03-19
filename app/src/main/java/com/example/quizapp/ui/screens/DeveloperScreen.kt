@@ -54,7 +54,7 @@ fun DeveloperScreen(onBack: () -> Unit) {
             val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:+992881001804"))
             context.startActivity(intent)
         }
-        ContactInfo(icon = R.drawable.ic_email, text = "shukurullomirzoev2004@gmail.com") {
+        ContactInfo(icon = R.drawable.ic_email, text = "shukurullomirzoev@gmail.com") {
             val intent = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:shukurullomirzoev2004@gmail.com"))
             context.startActivity(intent)
         }
@@ -68,19 +68,19 @@ fun DeveloperScreen(onBack: () -> Unit) {
         // **Ijtimoiy tarmoqlar**
         Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
             SocialButton(R.drawable.ic_instagram) {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/yourprofile"))
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/shukurul1o.2004"))
                 context.startActivity(intent)
             }
             SocialButton(R.drawable.ic_telegram) {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/yourprofile"))
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/Shukurullo_Mirzoev"))
                 context.startActivity(intent)
             }
             SocialButton(R.drawable.ic_linkedin) {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://linkedin.com/in/yourprofile"))
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/shukurullo-mirzoev/"))
                 context.startActivity(intent)
             }
             SocialButton(R.drawable.ic_github) {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/yourprofile"))
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/shukurullo-mirzoev"))
                 context.startActivity(intent)
             }
         }
@@ -114,67 +114,3 @@ fun SocialButton(icon: Int, onClick: () -> Unit) {
         Icon(painterResource(id = icon), contentDescription = "Social Media", modifier = Modifier.size(40.dp))
     }
 }
-
-
-
-
-//package com.example.quizapp.ui.screens
-//
-//import androidx.compose.foundation.Image
-//import androidx.compose.foundation.layout.Arrangement
-//import androidx.compose.foundation.layout.Column
-//import androidx.compose.foundation.layout.Row
-//import androidx.compose.foundation.layout.Spacer
-//import androidx.compose.foundation.layout.fillMaxSize
-//import androidx.compose.foundation.layout.height
-//import androidx.compose.foundation.layout.padding
-//import androidx.compose.foundation.layout.size
-//import androidx.compose.material3.Icon
-//import androidx.compose.material3.IconButton
-//import androidx.compose.material3.Text
-//import androidx.compose.runtime.Composable
-//import androidx.compose.ui.Alignment
-//import androidx.compose.ui.Modifier
-//import androidx.compose.ui.graphics.Color
-//import androidx.compose.ui.res.painterResource
-//import androidx.compose.ui.text.font.FontWeight
-//import androidx.compose.ui.unit.dp
-//import androidx.compose.ui.unit.sp
-//import com.example.quizapp.R
-//
-//
-//@Composable
-//fun DeveloperScreen() {
-//    Column(
-//        modifier = Modifier.fillMaxSize().padding(16.dp),
-//        horizontalAlignment = Alignment.CenterHorizontally
-//    ) {
-//        Spacer(modifier = Modifier.height(30.dp))
-//        Image(
-//            painter = painterResource(id = R.drawable.profile),
-//            contentDescription = "Profile",
-//            modifier = Modifier.size(250.dp)
-//        )
-//        Spacer(modifier = Modifier.height(8.dp))
-//        Text("Ismingiz Familiyangiz", fontSize = 20.sp, fontWeight = FontWeight.Bold)
-//        Text("Android Developer", fontSize = 16.sp, color = Color.Gray)
-//
-//        Spacer(modifier = Modifier.height(16.dp))
-//
-//        // **Ijtimoiy tarmoqlar**
-//        Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-//            IconButton(onClick = { /* Instagram link */ }) {
-//                Icon(painterResource(id = R.drawable.ic_instagram), contentDescription = "Instagram")
-//            }
-//            IconButton(onClick = { /* Telegram link */ }) {
-//                Icon(painterResource(id = R.drawable.ic_telegram), contentDescription = "Telegram")
-//            }
-//            IconButton(onClick = { /* LinkedIn link */ }) {
-//                Icon(painterResource(id = R.drawable.ic_linkedin), contentDescription = "LinkedIn")
-//            }
-//            IconButton(onClick = { /* GitHub link */ }) {
-//                Icon(painterResource(id = R.drawable.ic_github), contentDescription = "GitHub")
-//            }
-//        }
-//    }
-//}

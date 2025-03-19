@@ -18,18 +18,3 @@ fun CapitalsQuizScreen(region: String, onBack: () -> Unit, onQuizFinished: () ->
 }
 
 
-
-
-
-//
-//package com.example.quizapp.ui.screens.quiz
-//
-//import androidx.compose.runtime.Composable
-//import com.example.quizapp.data.getCapitalQuestions
-//
-//@Composable
-//fun CapitalsQuizScreen(region: String, onQuizFinished: () -> Unit) {
-//    val questions = getCapitalQuestions(region)
-//    QuizScreen("Столицы", questions[0].first, questions[0].second, onAnswerSelected = { onQuizFinished() })
-//}
-//

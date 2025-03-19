@@ -15,6 +15,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -51,6 +52,15 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.runtime.android)
     implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.compose.testing)
+
+    // 📌 **STATUS BAR UCHUN YANGI KUTUBXONA**
+//    implementation("com.google.accompanist:accompanist-systemuicontroller:0.31.1-alpha"
+    implementation ("com.google.accompanist:accompanist-systemuicontroller:0.31.1-alpha")
+
+//    implementation ("com.google.accompanist:accompanist-systemuicontroller:0.30.1")
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
