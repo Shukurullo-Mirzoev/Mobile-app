@@ -22,6 +22,7 @@ import androidx.activity.compose.BackHandler
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import kotlinx.coroutines.launch
 
+
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun QuizScreen(
@@ -165,7 +166,6 @@ fun QuizScreen(
         }
     }
 }
-
 
 @Composable
 fun AnswerButton(
